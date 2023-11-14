@@ -16,18 +16,19 @@ $(document).ready(function () {
     $(".main").slideDown(300);
   });
 
-  $("#addBtn").click(function (e) {
-    $("#listt").append("<li>list");
-  });
-  $("#prependBtn").click(function (e) {
-    $("#prependTest").prepend("新增的 ");
+  $("#prependBtn1").click(function () {
+    $("#prependTest1").prepend("新增的 ");
   });
 
-  $("#addBtnn").click(function () {
-    $("#list").append("<li>list");
+  $("#addBtn1").click(function () {
+    $("#list1").append("<li>list");
   });
-  $("#removeBtnn").click(function (){
-    $("li:last-child").remove();
+
+  $("#addBtn2").click(function () {
+    $("#list2").append("<li>list");
+  });
+  $("#removeBtn1").click(function (){
+    $("#list2 li:last-child").remove();
   });
   
 
