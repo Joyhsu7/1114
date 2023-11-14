@@ -30,6 +30,14 @@ $(document).ready(function () {
   $("#removeBtn1").click(function (){
     $("#list2 li:last-child").remove();
   });
-  
 
+  $("#addBtn3").click(function () {
+    $("#list3").append("<li>新增的 <button class='removeBtn2'>移除</button></li>");
+  });
+  $("#removeBtn2").click(function (){
+    $("#list3 li:last-child").remove();
+  });
+  $("#list3").on("click", ".removeBtn2", function () {
+    $(this).closest("li").remove();
+  });
 });
